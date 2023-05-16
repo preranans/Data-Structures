@@ -28,7 +28,7 @@ int partition(int a[], int first, int last, int index[])
     return pivotpos; // Return the final position of the pivot
 }
 
-void quickSort(int a[], int first, int last, int index[])
+void quickSort(int a[], int first, int last, int index[]) //quicksort technique used as it has a time complexity of O(n*logn) considering average case
 {
     int pivpos;
     if (first < last)
