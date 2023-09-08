@@ -6,7 +6,6 @@ class Solution {
     while (left < right) {
         char leftChar = s.charAt(left);
         char rightChar = s.charAt(right);
-        
         if (!Character.isLetterOrDigit(leftChar)) {
             left++;
         } else if (!Character.isLetterOrDigit(rightChar)) {
