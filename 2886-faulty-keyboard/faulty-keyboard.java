@@ -8,7 +8,6 @@ class Solution {
 			 else {
 			 sb.append(s.charAt(i));
 			 }
-			 
 		 }
          return String.valueOf(sb);   
     }
