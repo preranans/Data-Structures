@@ -8,7 +8,7 @@ class Solution {
         long right = num / 2;
         
         while (left <= right) {
-            long mid = left + (right - left) / 2;
+            long mid =(left + right) / 2;
             long square = mid * mid;
             if (square == num) {
                 return true;
