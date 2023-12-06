@@ -1,14 +1,16 @@
-class Solution {
+public class Solution {
     public int lengthOfLastWord(String s) {
-        int count = 0;
-        int i = s.length() - 1;
-        while (i >= 0 && s.charAt(i) == ' ') {
-            i--;
+        s = s.trim();
+        if (s.isEmpty()) {
+            return 0;
         }
-        while (i >= 0 && s.charAt(i) != ' ') {
+        StringBuilder reversed = new StringBuilder(s).reverse();
+        int count = 0;
+        int i = 0;
+        while (i < reversed.length() && reversed.charAt(i) != ' ') {
+            i++;
             count++;
-            i--;
-        } 
+        }
         return count;
     }
 }
